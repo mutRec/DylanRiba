@@ -5,21 +5,21 @@
   <!-- FONTAWESOME : Dona les icones del web (botiga, home, contacte, instagram... -->
   <script src="https://kit.fontawesome.com/c0d79b4f22.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../public/css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <title>DylanRiba</title>
 </head>
 
 <body>
- <div class="fulla">
-    <header class="capçalera">
-      <div>
+ <div class="wrapper">
+    <header class="header">
+      <div >
         <navbar>
             <ul>
-                <li><a href="">Inici</a></li>
-                <li><a href="">Música</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Botiga</a></li>
-                <li><a href="">Concerts</a></li>
+                <li><a href="#inici">Inici</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="botiga.html">Botiga</a></li>
+                <li><a href="#concerts">Concerts</a></li>
             </ul>
         </navbar>
       </div>
@@ -27,7 +27,7 @@
         <navbar>
             <ul>
                 <li><a href=""><i class="fab fa-youtube fa-1x"></i></a></li>
-                <li><a href=""><i class="fab fa-bandcamp fa-1x"></i></a></li>
+                <li><a href="https://dylanriba.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp fa-1x"></i></a></li>
                 <li><a href=""><i class="fab fa-instagram fa-1x"></i></a></li>
                 <li><a href=""><i class="fab fa-spotify fa-1x"></i></a></li>
                 <li><a href=""><i class="fab fa-deezer fa-1x"></i></a></li>
@@ -35,15 +35,21 @@
         </navbar>
       </div>
     </header>
+    <div class="inici" id="inici"></div>
+  </div>
+
+  <main>
+    <div class="musica" id="musica"></div>     
+    <div class="videos" id="videos"></div>     
+    <div class="concerts" id="concerts"></div>     
+         
     
-    <main>
-           
-    </main>
+    
+  </main>
 
-    <footer>
-       <span></span>
-    </footer>
- </div>
-
+  <footer class="footer">
+    <span>Dylan Riba - 2021</span>  
+  </footer>
+ 
 </body>
 </html>

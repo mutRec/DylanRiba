@@ -1,31 +1,36 @@
+html {
+    scroll-behavior: smooth; /* Lentitud en mourem entre enllaços locals. */
+}
+
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    /*background-color: black;*/
+    background-color: #333;
 }
 
-.fulla {
+.wrapper {
     background-image: url("../img/concert2.jpg");
     background-size:cover;
-    min-height: 700px;
+    min-height: 1200px;
     background-repeat: no-repeat;
 }
 
-.capçalera {
+.header {
     display: grid;
     grid-template-columns: 65% 35%;
     font-family: 'Special Elite', cursive;
     font-size: 24px;
 }
 
-.capçalera > div {
+.header > div {
     /*background: white;*/
     padding: 5px;
     text-align: right;
     color: rgb(253, 252, 167);
   }
   
- .capçalera > div:nth-child(odd) {
+ .header > div:nth-child(odd) {
     /*background: white;*/
     padding: 5px;
     text-align: left;
@@ -56,4 +61,41 @@ navbar ul li a:hover {
     text-decoration: none;
     color:rgb(255, 255, 255);
     transition-duration: 2ms;
+}
+
+.inici {
+    min-height: 900px;
+    font-family: 'Special Elite', cursive;
+    color: rgb(253, 252, 167);
+}
+
+.musica {
+    min-height: 900px;
+    background-image: url("../img/local2.jpg");
+    background-size:cover;
+    font-family: 'Special Elite', cursive;   
+}
+
+.videos {
+    min-height: 900px;
+    background-image: url("../img/cassete.jpg");
+    background-size:cover;
+    font-family: 'Special Elite', cursive;   
+}
+
+.concerts {
+    min-height: 900px;
+    background-image: url("../img/concert4.jpg");
+    background-size:cover;
+    font-family: 'Special Elite', cursive;   
+}
+
+.footer {
+    padding: 25px;
+    background-color: #111;
+    min-height: 40px;
+    font-family: 'Special Elite', cursive;   
+    font-size: 46px;
+    color: rgb(253, 252, 167);
+    text-align: center;
 }
