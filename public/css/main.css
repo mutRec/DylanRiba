@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.fulla {
+    background-image: url("../img/concert2.jpg");
+    background-size:cover;
+    min-height: 700px;
+    background-repeat: no-repeat;
+}
+
+.capçalera {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    font-family: 'Special Elite', cursive;
+    font-size: 24px;
+}
+
+.capçalera > div {
+    /*background: white;*/
+    padding: 5px;
+    text-align: right;
+    color: rgb(253, 252, 167);
+  }
+  
+ .capçalera > div:nth-child(odd) {
+    /*background: white;*/
+    padding: 5px;
+    text-align: left;
+    color: rgb(253, 252, 167);
+  }
+
+navbar {
+    margin: 0px;
+    padding: 5px;
+  }
+
+navbar ul {
+    margin: 0px;
+}
+
+navbar ul li {
+    margin-right: 30px;
+    list-style: none;
+    display: inline-block;
+}
+
+navbar ul li a {
+    text-decoration: none;
+    color:rgb(253, 252, 167);
+}
+
+navbar ul li a:hover {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition-duration: 2ms;
+}
