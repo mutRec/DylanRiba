@@ -4,15 +4,20 @@
   <meta charset="UTF-8"> <!-- Per caràcters llatins -->
   <!-- FONTAWESOME : Dona les icones del web (botiga, home, contacte, instagram... -->
   <script src="https://kit.fontawesome.com/c0d79b4f22.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet"> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet"/> 
+  <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet"/> 
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="../css/main.css">
   <title>DylanRiba</title>
 </head>
 
 <body>
+  
  <div class="wrapper">
-    <header class="header">
+   <header class="header sticky">
       <div >
         <navbar>
             <ul>
@@ -37,7 +42,21 @@
         </navbar>
       </div>
     </header>
-    <div class="inici" id="inici"></div>
+  
+    <div class="inici" id="inici">
+         <br><br><br><br><br><br><br>
+         <ul>
+           <li id="canconsPortatils" class="animate__animated animate__zoomIn animate_slower animate__repeat-3">Cançons<br>Portàtils</li>
+           <li></li>
+           <li id="maquetaJaDisponible">Maqueta ja disponible!</li>
+           <li>
+             <form>
+              <input type="submit" class="buto" value="Comprar" id="comprar"></input>
+              <input type="submit" class="buto" value="Escoltar" id="escoltar"></input>
+             </form>
+            </li>
+         </ul>
+    </div>
   </div>
 
   <main>
@@ -47,15 +66,15 @@
     <div class="videos" id="videos">
       <span>Videos</span>
     </div>     
-    <div class="concerts" id="concerts"></div>     
-         
-    
-    
+    <div class="concerts" id="concerts">
+      <span>Concerts</span>
+    </div>     
   </main>
 
   <footer class="footer">
-    <span>Dylan Riba - 2021</span>  
+    <span>Dylan Riba</span>  
   </footer>
- 
+
+<script src="../public/js/code.js"></script>
 </body>
 </html>

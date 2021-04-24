@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth; /* Lentitud en mourem entre enllaços locals. */
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -20,6 +22,7 @@ body {
     grid-template-columns: 65% 35%;
     font-family: 'Special Elite', cursive;
     font-size: 24px;
+    border-bottom:rgb(255, 255, 255) solid 1px;
 }
 
 .header > div {
@@ -27,19 +30,19 @@ body {
     padding: 5px;
     text-align: right;
     color: rgb(253, 252, 167);
-  }
-  
- .header > div:nth-child(odd) {
+}
+
+.header > div:nth-child(odd) {
     /*background: white;*/
     padding: 5px;
     text-align: left;
     color: rgb(253, 252, 167);
-  }
+}
 
 navbar {
     margin: 0px;
     padding: 5px;
-  }
+}
 
 navbar ul {
     margin: 0px;
@@ -62,16 +65,62 @@ navbar ul li a:hover {
     transition-duration: 2ms;
 }
 
-navbar span {
-    margin-left: 0.6em;
-    font-size: 74px;
+#nomGrup {
+    color: rgb(255, 247, 0);
     font-family: 'Spicy Rice', cursive;
+    font-size: 64px;
+    margin-left: 0.6em;
+}
+
+#canconsPortatils {
+    font-family: 'Chango', cursive;
+    color: whitesmoke;
+    font-size: 74px;
+    text-shadow: 1px 1px 15px black;
+}
+
+#maquetaJaDisponible {
+    color: whitesmoke;
+    font-size: 34px;
+    font-family: 'Oxanium', cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 15px white;
+}
+
+.buto {
+    background-color: black;
+    color: rgb(253, 252, 167);
+    border: black 2px solid;
+    padding: 10px;
+    font-size: 24px;
+    transition-duration: 0.2s;
+ /* border-radius: 5px; */
+    height: 2.2em;
+}
+
+.buto:hover {
+    background-color: transparent;
+    color: white;
 }
 
 .inici {
-    min-height: 900px;
+    min-height: 1100px;
     font-family: 'Special Elite', cursive;
     color: rgb(253, 252, 167);
+}
+
+.inici ul {
+    padding-top: 3em;
+    text-align: center;
+    font-size: 44px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+navbar ul li a {
+    text-decoration: none;
+    color:rgb(253, 252, 167);
 }
 
 .musica {
@@ -80,7 +129,7 @@ navbar span {
 }
 
 div.musica {
-    padding: 2em;
+    padding-top: 3em;
     font-size: 64px;
     color:rgb(255, 255, 255);
     text-align: center;
@@ -92,7 +141,7 @@ div.musica {
 }
 
 div.videos {
-    padding: 2em;
+    padding-top: 3em;
     font-size: 64px;
     color:rgb(255, 255, 255);
     text-align: center;
@@ -103,12 +152,37 @@ div.videos {
     font-family: 'Special Elite', cursive;   
 }
 
+div.concerts {
+    padding-top: 3em;
+    font-size: 64px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
 .footer {
     padding: 25px;
     background-color: #111;
     min-height: 40px;
-    font-family: 'Special Elite', cursive;   
+    font-family: 'Spicy Rice', cursive;   
     font-size: 46px;
     color: rgb(253, 252, 167);
     text-align: center;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
 }
