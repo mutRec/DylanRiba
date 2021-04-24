@@ -7,13 +7,12 @@ body {
     padding: 0px;
     /*background-color: black;*/
     background-color: #333;
+    background: url("../img/gradient2.jpg") no-repeat fixed center center #111;
 }
 
 .wrapper {
-    background-image: url("../img/concert2.jpg");
+    background: url("../img/concert2.jpg") no-repeat fixed center center #111;
     background-size:cover;
-    min-height: 1200px;
-    background-repeat: no-repeat;
 }
 
 .header {
@@ -63,6 +62,12 @@ navbar ul li a:hover {
     transition-duration: 2ms;
 }
 
+navbar span {
+    margin-left: 0.6em;
+    font-size: 74px;
+    font-family: 'Spicy Rice', cursive;
+}
+
 .inici {
     min-height: 900px;
     font-family: 'Special Elite', cursive;
@@ -71,22 +76,30 @@ navbar ul li a:hover {
 
 .musica {
     min-height: 900px;
-    background-image: url("../img/local2.jpg");
-    background-size:cover;
     font-family: 'Special Elite', cursive;   
+}
+
+div.musica {
+    padding: 2em;
+    font-size: 64px;
+    color:rgb(255, 255, 255);
+    text-align: center;
 }
 
 .videos {
     min-height: 900px;
-    background-image: url("../img/cassete.jpg");
-    background-size:cover;
     font-family: 'Special Elite', cursive;   
+}
+
+div.videos {
+    padding: 2em;
+    font-size: 64px;
+    color:rgb(255, 255, 255);
+    text-align: center;
 }
 
 .concerts {
     min-height: 900px;
-    background-image: url("../img/concert4.jpg");
-    background-size:cover;
     font-family: 'Special Elite', cursive;   
 }
 
