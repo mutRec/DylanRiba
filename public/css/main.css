@@ -22,7 +22,7 @@ body {
     grid-template-columns: 65% 35%;
     font-family: 'Special Elite', cursive;
     font-size: 24px;
-    border-bottom:rgb(255, 255, 255) solid 1px;
+    border-bottom: rgb(253, 252, 167) solid 0.5px;
 }
 
 .header > div {
