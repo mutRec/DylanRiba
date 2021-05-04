@@ -186,3 +186,17 @@ div.concerts {
 .sticky + .content {
     padding-top: 60px;
 }
+
+.caixavideo {
+    border: 0px;
+    width: 620px;
+    height: 345px;
+}
+
+.caixavideotext {
+    text-align: center;
+    font-family: 'Special Elite', cursive; 
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
