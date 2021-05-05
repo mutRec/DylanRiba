@@ -188,7 +188,7 @@ div.concerts {
 }
 
 .caixavideo {
-    border: 0px;
+    border: 5px solid rgb(255, 255, 120);
     width: 620px;
     height: 345px;
 }
